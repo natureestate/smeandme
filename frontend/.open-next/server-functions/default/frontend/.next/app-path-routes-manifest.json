@@ -1,0 +1,9 @@
+{
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/favicon.ico/route": "/favicon.ico",
+  "/_not-found/page": "/_not-found",
+  "/api/draft-mode/enable/route": "/api/draft-mode/enable",
+  "/page": "/",
+  "/[slug]/page": "/[slug]",
+  "/posts/[slug]/page": "/posts/[slug]"
+}

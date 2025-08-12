@@ -1,0 +1,9 @@
+{
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/draft-mode/enable/route": "app/api/draft-mode/enable/route.js",
+  "/page": "app/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
+  "/posts/[slug]/page": "app/posts/[slug]/page.js"
+}
