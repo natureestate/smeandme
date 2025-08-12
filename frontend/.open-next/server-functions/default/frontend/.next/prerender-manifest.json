@@ -54,30 +54,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/about": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/[slug]",
-      "dataRoute": "/about.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/posts/pitching-sanity-to-your-team": {
       "experimentalBypassFor": [
         {
@@ -149,10 +125,8 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    }
-  },
-  "dynamicRoutes": {
-    "/[slug]": {
+    },
+    "/about": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -164,10 +138,9 @@
           "value": "multipart/form-data;.*"
         }
       ],
-      "routeRegex": "^/([^/]+?)(?:/)?$",
-      "dataRoute": "/[slug].rsc",
-      "fallback": null,
-      "dataRouteRegex": "^/([^/]+?)\\.rsc$",
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/[slug]",
+      "dataRoute": "/about.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -176,7 +149,9 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
+    }
+  },
+  "dynamicRoutes": {
     "/posts/[slug]": {
       "experimentalBypassFor": [
         {
@@ -201,12 +176,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/[slug]": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "routeRegex": "^/([^/]+?)(?:/)?$",
+      "dataRoute": "/[slug].rsc",
+      "fallback": null,
+      "dataRouteRegex": "^/([^/]+?)\\.rsc$",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "28364af3c0cb99d7a8a60031de8f17be",
-    "previewModeSigningKey": "853ae496c2841b29b8167d920de28a3a6a0dbef764fa254a4bb9cea9432f6e7c",
-    "previewModeEncryptionKey": "a3253e29a26956da8fe0c8db293c3110edec0b8e2171ef8f99c9a0041df2f1f7"
+    "previewModeId": "622cde7b414347060adaa6870e651eb9",
+    "previewModeSigningKey": "2e686ff5a25b728be0b199636e7cbb48a3fcb1a1728b9224a2dd00b92940126c",
+    "previewModeEncryptionKey": "6c1ca6be4cea4f3d927b7e390aecb382fefe6b58120f09845eb26b813b2e15bd"
   }
 }

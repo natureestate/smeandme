@@ -22,21 +22,21 @@ export default async function Page() {
             <div className="relative min-h-[40vh] mx-auto max-w-2xl pt-10 xl:pt-20 pb-30 space-y-6 lg:max-w-4xl lg:px-12 flex flex-col items-center justify-center">
               <div className="flex flex-col gap-4 items-center">
                 <div className="text-md leading-6 prose uppercase py-1 px-3 bg-white font-mono italic">
-                  A starter template for
+                  Let Start with
                 </div>
                 <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-black">
                   <Link
                     className="underline decoration-brand hover:text-brand underline-offset-8 hover:underline-offset-4 transition-all ease-out"
                     href="https://sanity.io/"
                   >
-                    Sanity
+                    SME 
                   </Link>
-                  +
+                  &
                   <Link
                     className="underline decoration-black text-framework underline-offset-8 hover:underline-offset-4 transition-all ease-out"
                     href="https://nextjs.org/"
                   >
-                    Next.js
+                     ME
                   </Link>
                 </h1>
               </div>

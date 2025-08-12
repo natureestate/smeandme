@@ -18,9 +18,9 @@
     ]
   },
   "../node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/PresentationComlink.js": {
-    "id": 3209,
+    "id": 9319,
     "files": [
-      "static/chunks/209.773b0ac4f6b0251a.js"
+      "static/chunks/319.cc98556fe7ac3424.js"
     ]
   },
   "../node_modules/@sanity/next-loader/dist/client-components/live.js -> ../_chunks-es/RefreshOnFocus.js": {
@@ -62,8 +62,8 @@
       "static/chunks/2f9a4f6c.78f342abee4bb68d.js",
       "static/chunks/cb3cd712.5670932be3254925.js",
       "static/chunks/107-0d72babf9e872899.js",
-      "static/chunks/571.70fa8187ca7a1a42.js",
-      "static/chunks/512.0daf8096de51cdef.js"
+      "static/chunks/571.589b426d3ead0e9a.js",
+      "static/chunks/445.52da50e5e6763c23.js"
     ]
   }
 }
