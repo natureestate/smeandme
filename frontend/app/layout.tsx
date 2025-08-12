@@ -48,6 +48,14 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       images: ogImage ? [ogImage] : [],
     },
+    // ป้องกัน iOS auto-link ที่อาจทำให้เกิด hydration mismatch
+    // อ้างอิง: https://nextjs.org/docs/messages/react-hydration-error
+    formatDetection: {
+      telephone: false,
+      date: false,
+      email: false,
+      address: false,
+    },
   };
 }
 
@@ -66,7 +74,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className={`${inter.variable} bg-white text-black`}>
-      <body>
+      <body suppressHydrationWarning>
         <section className="min-h-screen pt-24">
           {/* The <Toaster> component is responsible for rendering toast notifications used in /app/client-utils.ts and /app/components/DraftModeToast.tsx */}
           <Toaster />
