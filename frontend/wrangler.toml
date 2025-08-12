@@ -1,4 +1,4 @@
-name = "smeandme-frontend"
+name = "smeandme"
 main = ".open-next/worker.js"
 compatibility_date = "2025-08-12"
 compatibility_flags = ["nodejs_compat"]
