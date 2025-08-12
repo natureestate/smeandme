@@ -4,6 +4,7 @@
   "scripts": {
     "predev": "npm run typegen",
     "dev": "next dev --turbopack",
+    "restart": "PORT=3000 ./scripts/restart-dev.sh",
     "prebuild": "npm run typegen",
     "build": "next build",
     "start": "next start",
