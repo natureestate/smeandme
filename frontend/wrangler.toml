@@ -6,8 +6,8 @@ compatibility_flags = ["nodejs_compat"]
 
 # Routes บนโดเมนจริง
 routes = [
-  { pattern = "smeandme.org/*" },
-  { pattern = "www.smeandme.org/*" }
+  { pattern = "smeandme.org", custom_domain = true },
+  { pattern = "www.smeandme.org", custom_domain = true }
 ]
 
 # Static assets ที่ OpenNext สร้าง
