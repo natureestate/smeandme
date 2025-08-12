@@ -1,23 +1,21 @@
+account_id = "888725e55ac1543637e22d1c490c5d9c"
 name = "smeandme"
 main = ".open-next/worker.js"
 compatibility_date = "2025-08-12"
 compatibility_flags = ["nodejs_compat"]
 
-# ผูก static assets ที่ OpenNext สร้าง
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
-
-# ตั้งค่า Account ID ของ Cloudflare (ได้จาก MCP)
-account_id = "888725e55ac1543637e22d1c490c5d9c"
-
-# หมายเหตุ: ตั้งค่า secret บน Cloudflare (ไม่เก็บในไฟล์นี้)
-#   SANITY_API_READ_TOKEN -> ใช้คำสั่ง: wrangler secret put SANITY_API_READ_TOKEN
-
-# ชี้ Route ให้บริการผ่านโดเมนจริงบน Cloudflare
+# Routes บนโดเมนจริง
 routes = [
   { pattern = "smeandme.org/*" },
   { pattern = "www.smeandme.org/*" }
 ]
+
+# Static assets ที่ OpenNext สร้าง
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# หมายเหตุ: ตั้งค่า secret บน Cloudflare (ไม่เก็บในไฟล์นี้)
+#   SANITY_API_READ_TOKEN -> ใช้คำสั่ง: wrangler secret put SANITY_API_READ_TOKEN
 
 
