@@ -18,11 +18,12 @@ import {
 import {assist} from '@sanity/assist'
 
 // Environment variables for project configuration
-const projectId = process.env.SANITY_STUDIO_PROJECT_ID || 'your-projectID'
+// ตั้งค่าให้ตรงกับโปรเจกต์จริง (fallback หากไม่กำหนด env)
+const projectId = process.env.SANITY_STUDIO_PROJECT_ID || 'ihejaq0w'
 const dataset = process.env.SANITY_STUDIO_DATASET || 'production'
 
-// URL for preview functionality, defaults to localhost:3000 if not set
-const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000'
+// URL สำหรับ preview ให้ชี้โดเมนโปรดักชันเป็นค่าเริ่มต้น
+const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'https://smeandme.org'
 
 // Define the home location for the presentation tool
 const homeLocation = {
