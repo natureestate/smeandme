@@ -14,4 +14,10 @@ account_id = "888725e55ac1543637e22d1c490c5d9c"
 # หมายเหตุ: ตั้งค่า secret บน Cloudflare (ไม่เก็บในไฟล์นี้)
 #   SANITY_API_READ_TOKEN -> ใช้คำสั่ง: wrangler secret put SANITY_API_READ_TOKEN
 
+# ชี้ Route ให้บริการผ่านโดเมนจริงบน Cloudflare
+routes = [
+  { pattern = "smeandme.org/*" },
+  { pattern = "www.smeandme.org/*" }
+]
+
 
